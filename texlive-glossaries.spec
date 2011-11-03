@@ -1,3 +1,9 @@
+# revision 22100
+# category Package
+# catalog-ctan /macros/latex/contrib/glossaries
+# catalog-date 2011-04-13 23:15:06 +0200
+# catalog-license lppl
+# catalog-version 3.01
 Name:		texlive-glossaries
 Version:	3.01
 Release:	1
@@ -149,6 +155,7 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.dtx
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.ins
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.perl
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -163,3 +170,5 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
