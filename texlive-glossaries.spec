@@ -6,7 +6,7 @@
 # catalog-version 3.01
 Name:		texlive-glossaries
 Version:	3.01
-Release:	1
+Release:	2
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
