@@ -1,16 +1,16 @@
-# revision 22100
+# revision 26547
 # category Package
-# catalog-ctan /macros/latex/contrib/glossaries
-# catalog-date 2011-04-13 23:15:06 +0200
-# catalog-license lppl
-# catalog-version 3.01
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-glossaries
-Version:	3.01
-Release:	2
-Summary:	Create glossaries and lists of acronyms
+Version:	20120807
+Release:	1
+Summary:	TeXLive glossaries package
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
-License:	LPPL
+URL:		http://tug.org/texlive
+License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.source.tar.xz
@@ -21,25 +21,7 @@ Requires(post):	texlive-kpathsea
 Provides:	texlive-glossaries.bin = %{EVRD}
 
 %description
-The glossaries package supports acronyms and multiple
-glossaries, and has provision for operation in several
-languages (using the facilities of either babel or
-polyglossia). New entries are defined to have a name and
-description (and optionally an associated symbol). Support for
-multiple languages is offered, and plural forms of terms may be
-specified. An additional package, glossaries-accsupp, can make
-use of the accsupp package mechanisms for accessibility support
-for PDF files containing glossaries. The user may define new
-glossary styles, and preambles and postambles can be specified.
-There is provision for loading a database of terms, but only
-terms used in the text will be added to the relevant glossary.
-The package uses an indexing program to provide the actual
-glossary; either makeindex or xindy may serve this purpose, and
-a Perl script is provided to serve as interface. The package
-distribution also provides the mfirstuc package, for changing
-the first letter of a word to upper case. The package
-supersedes the author's glossary package (which is now
-obsolete), and a conversion tool is provided.
+TeXLive glossaries package.
 
 %post
     %{_sbindir}/texlive.post
@@ -73,9 +55,11 @@ obsolete), and a conversion tool is provided.
 %{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Spanish.dict
 %{_texmfdistdir}/tex/latex/glossaries/expl/glossaries-accsupp.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-hypernav.sty
+%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-inline.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-list.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-long.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-longragged.sty
+%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-mcols.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-super.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-superragged.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-tree.sty
@@ -105,6 +89,10 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-custom-acronym.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-inline.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-langdict.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-mfirstuc.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-numberlist.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample4col.pdf
