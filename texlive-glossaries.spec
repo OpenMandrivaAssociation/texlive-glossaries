@@ -1,12 +1,13 @@
-# revision 22100
+# revision 27766
 # category Package
 # catalog-ctan /macros/latex/contrib/glossaries
-# catalog-date 2011-04-13 23:15:06 +0200
+# catalog-date 2012-09-21 20:20:45 +0200
 # catalog-license lppl
-# catalog-version 3.01
+# catalog-version 3.03
 Name:		texlive-glossaries
-Version:	3.01
-Release:	2
+Epoch:		1
+Version:	3.03
+Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
@@ -73,9 +74,11 @@ obsolete), and a conversion tool is provided.
 %{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Spanish.dict
 %{_texmfdistdir}/tex/latex/glossaries/expl/glossaries-accsupp.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-hypernav.sty
+%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-inline.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-list.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-long.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-longragged.sty
+%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-mcols.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-super.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-superragged.sty
 %{_texmfdistdir}/tex/latex/glossaries/styles/glossary-tree.sty
@@ -105,6 +108,10 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-custom-acronym.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-inline.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-langdict.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-mfirstuc.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-numberlist.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample4col.pdf
@@ -145,6 +152,7 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.dtx
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.ins
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.perl
+%doc %{_texmfdistdir}/source/latex/glossaries/mfirstuc.perl
 
 #-----------------------------------------------------------------------
 %prep
@@ -162,6 +170,11 @@ cp -fpar texmf-dist %{buildroot}%{_datadir}
 
 
 %changelog
+* Mon Oct 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:3.03-1
++ Revision: 820576
+- Update to latest release.
+- Update to latest release.
+
 * Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.01-2
 + Revision: 752319
 - Rebuild to reduce used resources
