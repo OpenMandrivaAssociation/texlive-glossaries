@@ -1,12 +1,12 @@
-# revision 27766
+# revision 31171
 # category Package
 # catalog-ctan /macros/latex/contrib/glossaries
-# catalog-date 2012-09-21 20:20:45 +0200
+# catalog-date 2013-07-11 00:12:36 +0200
 # catalog-license lppl
-# catalog-version 3.03
+# catalog-version 3.07
 Name:		texlive-glossaries
 Epoch:		1
-Version:	3.03
+Version:	3.07
 Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
@@ -53,8 +53,10 @@ obsolete), and a conversion tool is provided.
 #-----------------------------------------------------------------------
 %files
 %{_bindir}/makeglossaries
+%{_texmfdistdir}/scripts/glossaries/glossaries.perl
 %{_texmfdistdir}/scripts/glossaries/makeglossaries
 %{_texmfdistdir}/scripts/glossaries/makeglossaries.bat
+%{_texmfdistdir}/scripts/glossaries/mfirstuc.perl
 %{_texmfdistdir}/tex/latex/glossaries/base/glossaries-babel.sty
 %{_texmfdistdir}/tex/latex/glossaries/base/glossaries-compatible-207.sty
 %{_texmfdistdir}/tex/latex/glossaries/base/glossaries-polyglossia.sty
@@ -85,6 +87,7 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/CHANGES
 %doc %{_texmfdistdir}/doc/latex/glossaries/INSTALL
 %doc %{_texmfdistdir}/doc/latex/glossaries/README
+%doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-code.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-user.html
 %doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-user.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-user.tex
@@ -151,8 +154,6 @@ obsolete), and a conversion tool is provided.
 #- source
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.dtx
 %doc %{_texmfdistdir}/source/latex/glossaries/glossaries.ins
-%doc %{_texmfdistdir}/source/latex/glossaries/glossaries.perl
-%doc %{_texmfdistdir}/source/latex/glossaries/mfirstuc.perl
 
 #-----------------------------------------------------------------------
 %prep
@@ -167,22 +168,3 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
-
-
-%changelog
-* Mon Oct 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:3.03-1
-+ Revision: 820576
-- Update to latest release.
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.01-2
-+ Revision: 752319
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.01-1
-+ Revision: 718560
-- texlive-glossaries
-- texlive-glossaries
-- texlive-glossaries
-- texlive-glossaries
-
