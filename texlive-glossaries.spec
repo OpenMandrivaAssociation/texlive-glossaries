@@ -1,13 +1,13 @@
-# revision 32171
+# revision 32735
 # category Package
 # catalog-ctan /macros/latex/contrib/glossaries
-# catalog-date 2013-11-17 00:00:10 +0100
+# catalog-date 2014-01-20 19:35:32 +0100
 # catalog-license lppl
-# catalog-version 4.01
+# catalog-version 4.03
 Name:		texlive-glossaries
 Epoch:		1
-Version:	4.01
-Release:	5
+Version:	4.03
+Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
@@ -106,6 +106,7 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/database2.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/minimalgls.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/minimalgls.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-FnDesc.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-FnDesc.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-crossref.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-crossref.tex
@@ -113,15 +114,25 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-custom-acronym.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-entryfmt.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-entryfmt.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-index.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-index.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-inline.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-inline.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-langdict.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-langdict.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-mfirstuc.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-mfirstuc.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-newkeys.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-newkeys.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-nomathhyper.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-nomathhyper.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-numberlist.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-numberlist.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-prefix.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-prefix.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-si.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-si.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.tex
@@ -131,6 +142,8 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleAcr.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleAcrDesc.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleAcrDesc.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleCustomAcr.pdf
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleCustomAcr.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleDB.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleDB.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleDesc.pdf
@@ -139,11 +152,15 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleEq.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleEqPg.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleEqPg.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleFnAcrDesc.pdf
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleFnAcrDesc.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleNtn.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleNtn.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplePeople.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplePeople.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSec.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSec.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSort.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSort.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleaccsupp.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleaccsupp.tex
@@ -153,7 +170,6 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampletree.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleutf8.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleutf8.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy-compatible207.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy-mc.xdy
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy-mc207.xdy
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy.pdf
