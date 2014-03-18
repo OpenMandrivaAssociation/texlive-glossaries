@@ -1,12 +1,12 @@
-# revision 32735
+# revision 33162
 # category Package
 # catalog-ctan /macros/latex/contrib/glossaries
-# catalog-date 2014-01-20 19:35:32 +0100
+# catalog-date 2014-03-12 18:55:48 +0100
 # catalog-license lppl
-# catalog-version 4.03
+# catalog-version 4.06
 Name:		texlive-glossaries
 Epoch:		1
-Version:	4.03
+Version:	4.06
 Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
@@ -61,6 +61,7 @@ obsolete), and a conversion tool is provided.
 %{_texmfdistdir}/tex/latex/glossaries/base/glossaries-compatible-207.sty
 %{_texmfdistdir}/tex/latex/glossaries/base/glossaries-compatible-307.sty
 %{_texmfdistdir}/tex/latex/glossaries/base/glossaries-polyglossia.sty
+%{_texmfdistdir}/tex/latex/glossaries/base/glossaries-prefix.sty
 %{_texmfdistdir}/tex/latex/glossaries/base/glossaries.sty
 %{_texmfdistdir}/tex/latex/glossaries/base/mfirstuc.sty
 %{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Brazilian.dict
@@ -126,6 +127,10 @@ obsolete), and a conversion tool is provided.
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-mfirstuc.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-newkeys.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-newkeys.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp-utf8.pdf
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp-utf8.tex
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp.pdf
+%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-nomathhyper.pdf
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-nomathhyper.tex
 %doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-numberlist.pdf
