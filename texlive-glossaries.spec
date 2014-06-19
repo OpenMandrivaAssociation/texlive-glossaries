@@ -1,13 +1,13 @@
-# revision 33162
+# revision 33374
 # category Package
 # catalog-ctan /macros/latex/contrib/glossaries
-# catalog-date 2014-03-12 18:55:48 +0100
+# catalog-date 2014-04-04 14:05:09 +0200
 # catalog-license lppl
-# catalog-version 4.06
+# catalog-version 4.07
 Name:		texlive-glossaries
 Epoch:		1
-Version:	4.06
-Release:	2
+Version:	4.07
+Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
