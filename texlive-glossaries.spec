@@ -1,13 +1,7 @@
-# revision 33374
-# category Package
-# catalog-ctan /macros/latex/contrib/glossaries
-# catalog-date 2014-04-04 14:05:09 +0200
-# catalog-license lppl
-# catalog-version 4.07
 Name:		texlive-glossaries
 Epoch:		1
-Version:	4.07
-Release:	4
+Version:	4.35
+Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
@@ -53,137 +47,12 @@ obsolete), and a conversion tool is provided.
 #-----------------------------------------------------------------------
 %files
 %{_bindir}/makeglossaries
-%{_texmfdistdir}/scripts/glossaries/glossaries.perl
-%{_texmfdistdir}/scripts/glossaries/makeglossaries
-%{_texmfdistdir}/scripts/glossaries/makeglossaries.bat
-%{_texmfdistdir}/scripts/glossaries/mfirstuc.perl
-%{_texmfdistdir}/tex/latex/glossaries/base/glossaries-babel.sty
-%{_texmfdistdir}/tex/latex/glossaries/base/glossaries-compatible-207.sty
-%{_texmfdistdir}/tex/latex/glossaries/base/glossaries-compatible-307.sty
-%{_texmfdistdir}/tex/latex/glossaries/base/glossaries-polyglossia.sty
-%{_texmfdistdir}/tex/latex/glossaries/base/glossaries-prefix.sty
-%{_texmfdistdir}/tex/latex/glossaries/base/glossaries.sty
-%{_texmfdistdir}/tex/latex/glossaries/base/mfirstuc.sty
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Brazilian.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Danish.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Dutch.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-English.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-French.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-German.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Irish.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Italian.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Magyar.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Polish.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Serbian.dict
-%{_texmfdistdir}/tex/latex/glossaries/dict/glossaries-dictionary-Spanish.dict
-%{_texmfdistdir}/tex/latex/glossaries/expl/glossaries-accsupp.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-hypernav.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-inline.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-list.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-long.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-longragged.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-mcols.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-super.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-superragged.sty
-%{_texmfdistdir}/tex/latex/glossaries/styles/glossary-tree.sty
-%doc %{_texmfdistdir}/doc/latex/glossaries/CHANGES
-%doc %{_texmfdistdir}/doc/latex/glossaries/INSTALL
-%doc %{_texmfdistdir}/doc/latex/glossaries/README
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-code.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-user.html
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-user.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossaries-user.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossariesbegin.html
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossariesbegin.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossariesbegin.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossary2glossaries.html
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossary2glossaries.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/glossary2glossaries.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/mfirstuc-manual.html
-%doc %{_texmfdistdir}/doc/latex/glossaries/mfirstuc-manual.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/mfirstuc-manual.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/README-samples
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/database1.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/database2.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/minimalgls.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/minimalgls.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-FnDesc.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-FnDesc.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-crossref.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-crossref.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-custom-acronym.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-custom-acronym.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-dual.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-entryfmt.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-entryfmt.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-index.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-index.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-inline.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-inline.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-langdict.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-langdict.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-mfirstuc.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-mfirstuc.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-newkeys.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-newkeys.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp-utf8.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp-utf8.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-noidxapp.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-nomathhyper.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-nomathhyper.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-numberlist.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-numberlist.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-prefix.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-prefix.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-si.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample-si.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample4col.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sample4col.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleAcr.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleAcr.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleAcrDesc.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleAcrDesc.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleCustomAcr.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleCustomAcr.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleDB.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleDB.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleDesc.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleDesc.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleEq.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleEq.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleEqPg.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleEqPg.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleFnAcrDesc.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleFnAcrDesc.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleNtn.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleNtn.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplePeople.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplePeople.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSec.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSec.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSort.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleSort.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleaccsupp.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleaccsupp.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleacronyms.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleacronyms.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampletree.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampletree.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleutf8.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/sampleutf8.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy-mc.xdy
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy-mc207.xdy
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy.tex
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy2.pdf
-%doc %{_texmfdistdir}/doc/latex/glossaries/samples/samplexdy2.tex
+%{_texmfdistdir}/scripts/glossaries
+%{_texmfdistdir}/tex/latex/glossaries
+%doc %{_texmfdistdir}/doc/latex/glossaries
+%doc %{_texmfdistdir}/doc/man/man1/*
 #- source
-%doc %{_texmfdistdir}/source/latex/glossaries/glossaries.dtx
-%doc %{_texmfdistdir}/source/latex/glossaries/glossaries.ins
+%doc %{_texmfdistdir}/source/latex/glossaries
 
 #-----------------------------------------------------------------------
 %prep
