@@ -1,6 +1,6 @@
 Name:		texlive-glossaries
 Epoch:		1
-Version:	4.37
+Version:	4.40
 Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
