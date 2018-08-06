@@ -1,7 +1,7 @@
 Name:		texlive-glossaries
 Epoch:		1
-Version:	4.40
-Release:	2
+Version:	4.41
+Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
