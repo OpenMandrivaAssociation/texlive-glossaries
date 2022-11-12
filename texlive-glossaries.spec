@@ -1,14 +1,14 @@
 Name:		texlive-glossaries
 Epoch:		1
-Version:	4.42
+Version:	64919
 Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -37,12 +37,12 @@ supersedes the author's glossary package (which is now
 obsolete), and a conversion tool is provided.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -56,14 +56,15 @@ obsolete), and a conversion tool is provided.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/glossaries/makeglossaries makeglossaries
+ln -sf %{_texmfdistdir}/scripts/glossaries/makeglossaries makeglossaries
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
