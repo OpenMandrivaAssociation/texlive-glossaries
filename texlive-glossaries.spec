@@ -4,7 +4,7 @@ Version:	70866
 Release:	1
 Summary:	Create glossaries and lists of acronyms
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/glossaries
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/glossaries.doc.r%{version}.tar.xz
